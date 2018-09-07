@@ -10,6 +10,7 @@ pkgs.stdenv.mkDerivation {
   buildInputs = [
     ghc
     nixpkgs.scala
+    nixpkgs.sbt
   ];
   shellHook = "eval $(egrep ^export ${ghc}/bin/ghc)";
 }
