@@ -7,6 +7,9 @@ let
 in
 pkgs.stdenv.mkDerivation {
   name = "kinds-talk";
-  buildInputs = [ ghc ];
+  buildInputs = [
+    ghc
+    nixpkgs.scala
+  ];
   shellHook = "eval $(egrep ^export ${ghc}/bin/ghc)";
 }
