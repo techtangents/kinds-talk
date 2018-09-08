@@ -1,3 +1,3 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-data Maybe a = Nothing | Some a
+data Maybe a = Nothing | Just a

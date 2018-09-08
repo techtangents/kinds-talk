@@ -7,4 +7,4 @@ import Data.Kind
 
 data Maybe :: Type -> Type where
   Nothing  :: forall a. Maybe a
-  Maybe    :: forall a. a -> Maybe a
+  Just     :: forall a. a -> Maybe a
